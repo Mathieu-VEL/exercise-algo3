@@ -56,36 +56,42 @@
 
     <label>Nouvelle note ?</label>
     <input type="text" id="note" placeholder="Nouvelle note (optionnelle)"/>
-    <button type="button" class="btn btn-primary" onclick="refreshAverage()">
+    <button type="button" class="btn btn-primary" onclick="refreshAverage(notes)">
         (Re)calculer la moyenne
     </button>
 </div>
 
 <script type="text/javascript">
 
-    // notes de départ
     let notes = [8.75, 14, 13, 5.5];
 
-    /*
-     * La fonction "avearge" calcule la moyenne des notes contenues dans un tableau 
-     * (s'inspirer de l'exercice #03 - La moyenne pour renseigner cette fonction)
-     * Parametres : tableau qui contient les notes
-     * Retour : la moyenne calculée
-     */
-
     function average() {
-        // CODE HERE !
 
+        let sum = 0;
+
+        for(let i = 0; i < notes.length; i++){
+            console.log(notes[i]);
+            sum = sum + notes[i];
+        }
+        sum = sum / notes.length;
+        console.log(sum);
     }
-    /*
-     * Fonction appelée lors du 'clic' sur le bouton
-     * Parameters: 
-     * Return:
-     */
 
-    function refreshAverage() {
-        // CODE HERE !
+    function refreshAverage(){
 
+        let note = parseFloat(document.getElementById("note").value);
+        let newarray = notes.push(note);
+        if(Number.parseInt = note){
+            for(let i = 0; i < notes.length; i++){
+                console.log(notes[i]);
+                if(note < i){
+                    console.log(newarray + sum);
+                }
+                else{
+                    // alert("erreur: mettez la bonne note");
+                }
+            }
+        }
     }
 
 </script>

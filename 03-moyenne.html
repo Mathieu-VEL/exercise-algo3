@@ -40,14 +40,21 @@
 
     // Tableau des notes obtenues
     const notes = [8.75, 14, 13, 5.5, 9, 17, 11.25];
-
+    const abc = [8.75, 14, 13, 5.5, 9, 17, 11.25];
     /*
      * Ici le commentaire sur la fonction average...
      */
 
-    function average(noteArray) {
+    function average(zaerazer) {
         // CODE HERE !
+        let tabsum = 0;
         
+        for(let i = 0; i < zaerazer.length; i++){
+            console.log(zaerazer[i]);
+            tabsum = tabsum + zaerazer[i];
+        }
+        tabsum = tabsum / zaerazer.length;
+        console.log(tabsum);
     }
 
 
